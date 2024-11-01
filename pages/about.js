@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import { Footer } from "@/Conponents/Footer";
 import { Main } from "@/Conponents/Main";
+import { Header } from "@/Conponents/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
+        <Header/>
         <Main page="about" />
         <Footer />
       </div>
